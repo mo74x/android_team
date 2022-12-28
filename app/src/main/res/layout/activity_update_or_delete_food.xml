@@ -6,4 +6,51 @@
     android:layout_height="match_parent"
     tools:context=".Update_or_delete_food">
 
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="134dp"
+        android:layout_height="63dp"
+        android:onClick="onclickup"
+        android:text="update"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="655dp" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="133dp"
+        android:layout_height="60dp"
+        android:text="delete"
+        tools:layout_editor_absoluteX="241dp"
+        tools:layout_editor_absoluteY="655dp" />
+
+    <EditText
+        android:id="@+id/price_v"
+        android:layout_width="253dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <EditText
+        android:id="@+id/food_v"
+        android:layout_width="253dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="112dp" />
+
+    <EditText
+        android:id="@+id/category_v"
+        android:layout_width="253dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="36dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

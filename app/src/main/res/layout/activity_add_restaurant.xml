@@ -4,6 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="onclick_res"
     tools:context=".Add_restaurant">
+
+    <EditText
+        android:id="@+id/add_res"
+        android:layout_width="257dp"
+        android:layout_height="99dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="85dp" />
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="247dp"
+        android:layout_height="60dp"
+        android:onClick="onclick_res"
+        android:text="add restaurant"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="640dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
