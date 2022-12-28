@@ -1,9 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Update_or_delete_restaurant">
+    android:orientation="vertical"
+    tools:context=".Update_or_delete_food">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="253dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Restaurant" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        >
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="134dp"
+            android:layout_height="63dp"
+            android:onClick="onclick1"
+            android:text="update"
+            android:layout_marginLeft="20dp"
+            />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="133dp"
+            android:layout_height="60dp"
+            android:text="delete"
+            android:layout_marginLeft="20dp"
+            android:onClick="onclick2"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

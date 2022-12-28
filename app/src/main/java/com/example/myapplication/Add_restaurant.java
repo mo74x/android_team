@@ -12,23 +12,22 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class Add_restaurant extends AppCompatActivity {
-public static dataabasehelper1 mydb;
-public  static TextView res_name;
+    public static MyDatabase myDatabase;
+    public static TextView res_name;
 
     public static ArrayAdapter<String> arrayAdapter;
     public static ArrayList<String> names;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_restaurant);
-        mydb=new dataabasehelper1(this);
-        res_name=(TextView) findViewById(R.id.add_res);
-
-
-
-
+        myDatabase = new MyDatabase(this);
+        res_name = (TextView) findViewById(R.id.add_res);
     }
-    public void onclick_res(View view){
 
+    public void onclick_res(View view) {
+        myDatabase.insertRestaurant(new Restaurant(res_name.getText().toString()));
+        finish();
     }
 }
