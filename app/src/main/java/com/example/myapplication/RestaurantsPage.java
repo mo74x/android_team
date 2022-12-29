@@ -1,17 +1,26 @@
 package com.example.myapplication;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
+
+import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 
-public class RestaurantsPage extends AppCompatActivity {
+public class RestaurantsPage extends menu  {
     public static ListView listView;
     public static ArrayAdapter<String> arrayAdapter;
     public static ArrayList<String> restaurants;
@@ -34,6 +43,7 @@ public class RestaurantsPage extends AppCompatActivity {
             }
         });
     }
+
     public void  Onclick(View view){
         Intent intent = new Intent(getBaseContext(), Add_restaurant.class);
         startActivity(intent);

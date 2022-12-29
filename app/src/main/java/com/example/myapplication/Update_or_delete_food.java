@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class Update_or_delete_food extends AppCompatActivity {
+public class Update_or_delete_food extends menu {
     private static TextView restaurant, name, description,price;
     private static Food curFood;
     private MyDatabase myDatabase;

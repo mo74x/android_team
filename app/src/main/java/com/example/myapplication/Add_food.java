@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-public class Add_food extends AppCompatActivity {
+public class Add_food extends menu {
     public static MyDatabase myDatabase;
     public static Intent intent;
     public static EditText name;

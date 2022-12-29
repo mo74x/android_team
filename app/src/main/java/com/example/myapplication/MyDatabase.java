@@ -125,6 +125,4 @@ public class MyDatabase extends SQLiteOpenHelper {
         int result = db.delete("foods", "name=?", args);
         return result != 0;
     }
-
-
 }

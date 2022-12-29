@@ -12,7 +12,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class FoodsPage extends AppCompatActivity {
+public class FoodsPage extends menu {
     public static ListView listView;
     public static ArrayAdapter<String> arrayAdapter;
     public static ArrayList<String> foods;

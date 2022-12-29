@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class Add_restaurant extends AppCompatActivity {
+public class Add_restaurant extends menu {
     public static MyDatabase myDatabase;
     public static TextView res_name;
 

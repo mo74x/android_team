@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Sync">
+        <SwitchPreference
+            android:title="Dark Mode"
+            android:key="Dark" />
+        <Preference
+            android:title="Version"
+            android:summary="2.17" />
+        <Preference
+            android:title="Import"
+            android:summary="import database" />
+        <Preference
+            android:title="Export "
+            android:summary="export databse" />
+        <PreferenceCategory android:title="Contact us">
+            <Preference
+                android:title="About Us"
+                android:summary="lefta team"
+                />
+            <Preference
+                android:title="App language"
+                android:summary="English(Default)"
+                />
+            <Preference
+                android:title="Account"
+                android:summary="mange your data"
+                />
+            <Preference
+                android:title="Log out"
+                />
+        </PreferenceCategory>
+    </PreferenceCategory>
+</PreferenceScreen>

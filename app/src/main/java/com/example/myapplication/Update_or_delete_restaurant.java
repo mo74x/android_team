@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-public class Update_or_delete_restaurant extends AppCompatActivity {
+public class Update_or_delete_restaurant extends menu {
     private static Intent intent;
     private static EditText restaurant;
     private MyDatabase myDatabase;
